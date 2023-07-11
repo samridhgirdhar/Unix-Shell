@@ -1,0 +1,8 @@
+--- arch/x86/entry/syscalls/syscall_64.tbl	2022-11-23 23:41:12.986513799 +0530
++++ /usr/src/samridh/linux-5.19.8/arch/x86/entry/syscalls/syscall_64.tbl	2022-11-24 06:05:03.583333008 +0530
+@@ -414,5 +414,6 @@
+ 545	x32	execveat		compat_sys_execveat
+ 546	x32	preadv2			compat_sys_preadv64v2
+ 547	x32	pwritev2		compat_sys_pwritev64v2
++548	common	kern_2d_memcpy		sys_kern_2d_memcpy
+
